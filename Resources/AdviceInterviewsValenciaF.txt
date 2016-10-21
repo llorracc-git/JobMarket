@@ -1,0 +1,90 @@
+Subject: JhuJobMarketPublic Sharing interview experience
+Date: Saturday, December 17, 2005 20:57
+From: FABIAN VALENCIA <fvalencia@jhu.edu>
+Reply-To: JhuJobMarketPublic@googlegroups.com
+To: <JhuJobMarketPublic@googlegroups.com>
+Priority: normal
+
+
+Hi All,
+
+I've had a few (academic and non-academic) interviews in the past three weeks and wanted to share with all of you the experience because they were tougher than the mock interviews and therefore it might be useful in case you face similar circumstances. First, I would say that 60% of the interview is quite predictable and we had already enough advice at Hopkins about it, that is, the description of your own research, future research, clear contribution, etc. However here I give you additional issues to think about:
+
+1) When you talk about future research, be prepared to give specific information, not only what and how, but also, why some technique might be more appropriate than other, why you expect the results you expect. If you are talking with people with experience with the data or modeling technique you are planning to use, they will certainly throw at you data issues, modeling problems, literature issues, etc. Maybe they just want to determine how hard you've thought about your future research, and perhaps it is ok to say "I haven't figured out the details yet, etc.", maybe they are trying to determine if you really have skills to do what you say you are planning to do. I've had these type of questions more than once. 
+
+2)Be prepared to defend not only your research paper or your thesis topic but your entire field. Keep handy specific famous contributions that justify what you've done, but know the details, because this type of discussion usually happened with someone not in the field. I've had people telling me: "so and so (2003) wrote a paper and showed that banks don't matter". Therefore, it is important to know the details of the key papers, because in some cases they want to know in detail why the results of  "so and so (2003)" might be inconsistent with your work, especially if you are quoting "so and so (2003)" in your paper. I'm sure they will refer to someone famous. In my case, they quoted people that I knew about, but one of the papers I had not quoted, but luckily I knew the key issue to address. People will also use simple arguments, for instance I had people telling me (and this was the case in every interview) "but with all the securitization that is happening nowadays, you r
+eally think that banks are that important?" and they also might throw at you some result that someone just got out that might be only indirectly related to your work, and they might ask you if you think there is a link. I don't remember the specific question but more or less they asked me if I thought that the high stability of the banking system in the U.S. had contributed to the decreased volatility in output, or something like that. So, think about broad implications of your results or broad implications of the importance of what you do. 
+
+3) You are expected to know not only the technicalities of your research (the literature, results, etc), but also the real world issues. For instance, given that I claim to be a banking guy I had the sense that they were testing me on general trends on the U.S. banking system, i.e. behavior of consumer loans, mortgage loans, fixed-rate loans versus floating rate loans, behavior of key banking indicators that I should know about. Maybe becasue my paper was theoretical and they wanted to see if I had been exposed to the data or something like that.
+
+I think that's it. If I remember something else, I'll send another email. 
+
+Good luck! Merry Christmas! and see you all in Boston!
+
+
+Fabian V. Valencia
+Department of Economics 
+The Johns Hopkins University
+http://www.www.econ2.jhu.edu/People/valencia
+
+----- Original Message -----
+From: Christopher Carroll <ccarroll@jhu.edu>
+Date: Thursday, December 8, 2005 7:16 pm
+Subject: JhuJobMarketPublic Mock interview lessons.
+
+> 
+> 
+> 
+> Job Market Candidates,
+> 
+>    We hope most of you learned several things from the mock 
+> interviews:
+>    1) The importance of having a clear, simple, short idea of 
+> what you are
+> going to say before you go in.  It will help to write these things 
+> out as
+> bullet points.  You should not have more than one page of bullet 
+> points.Also, you should practice several times on your own, or 
+> with a spouse or
+> fellow job market candidate.  It is worth up to several days of 
+> your time to
+> get this part right.
+> 
+>    Again:  PRACTICE a 30-second statement of the key point of 
+> your job
+> market paper.  And practice what you will say in the 2 minutes 
+> after that 30
+> seconds is over.  
+> 
+>    If you can't explain what you have done in a short, memorable 
+> way, you
+> are doomed.
+> 
+>    2) You need to have learned something about the place that is
+> interviewing you - enough to ask at least one or two intelligent 
+> questions.
+>    3) Be confident but not arrogant.  Don't look at the floor or 
+> ceiling,look at the interviewers.  And be sure not to look only at 
+> one of them -
+> that insults the other one.
+> 
+>    4) Have a clear and simple statement of what your contribution is
+> relative to the existing literature.  A new theoretical result or 
+> approach?A new empirical approach?  New data?  Better data?  
+> Something else?
+> 
+>    
+> 
+> - Chris
+> 
+> -- 
+> Christopher D. Carroll
+> Professor of Economics
+> Johns Hopkins University
+> 440 Mergenthaler Hall
+> Baltimore, MD  21218-2685
+> (410) 516-7602 (office)
+> (303)-845-7533 (fax)
+> ccarroll@jhu.edu
+> http://www.www.econ2.jhu.edu/people/ccarroll
+> 

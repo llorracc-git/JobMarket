@@ -1,0 +1,401 @@
+\documentclass{econtex}
+
+\usepackage{econtexSetup}
+\usepackage{JobMarket}
+
+\provideboolean{MyNotes}\setboolean{MyNotes}{false}
+\opt{private}{\provideboolean{MyNotes}\setboolean{MyNotes}{true}} % Whether to show marginalia; useful for initial meeting with students
+
+\pagestyle{plain}
+\begin{document}
+\hfill{\tiny \jobname, \today} \vspace{0.1in}
+
+\begin{verbatimwrite}{\jobname.title}
+Steps in the Job Market Process
+\end{verbatimwrite}
+\ifdvi\large\fi
+\centerline{\Large Steps in the Job Market Process}\medskip\medskip
+
+\begin{enumerate}
+\item Familiarize yourself with this document, \timet, and \faq; in all communications I will expect you
+  to have thoroughly digested the information contained in all of the resources
+  I have provided.
+
+\item In your initial email to the JMPO and JMCC (see
+  \timet~for timing; see \ntn~for definitions of who the JMPO and JMCC are), indicate what your \Moniker~is (don't forget the middle initial!  see \Notation), your main advisor, second advisor, job paper title,
+  year in the JHU program, and assessment of likelihood you will
+  actually be on the market (for students before 6th year).
+
+\item \ifthenelse{\boolean{MyNotes}}{\marginpar{\tiny Ask computer
+      coordinator to help a student set up a listproc for discussions;
+      secret from JMPO.}}{} In early September, a login entry will be created for you using your \Moniker~in the
+  database that I have set up to keep track of job market candiates,
+  \db~ (its full url is at the end of this document).  Don't be
+  worried about the information you put in this database; it is mainly
+  for internal purposes and we will not (for example) put your phone
+  number on the internet.  But we do {\it need} your phone number so that you can be contacted quickly if necessary (in
+  response to an inquiry from an employer, e.g.).  {\it In addition,}
+  write a short memo about yourself for me and your advisor(s) that
+  includes most of the facts you have entered into the database, as
+  well as crucial extra content.  In this memo, {\it briefly} describe
+  your job market paper topic, sketch the rest of your dissertation,
+  mention any other research, and say something about teaching
+  interests.  Give a tentative title for your job market paper and
+  dissertation (this can change later, in the database).  Say what
+  kinds of jobs you are most interested in (e.g.\ university vs.\
+  teaching college vs.\ non-academic, large vs.\ small school) and any
+  geographic preferences or restrictions.  Note any special selling
+  points (e.g.\ good TA ratings), or special connections that could
+  result in a job offer outside the usual channels.  Include both
+  primary and `backup' contact information so we can always find you
+  quickly.  Also include visa status information.  {\it This document
+    must not be more than 2 pages.}  Call this document, e.g.,
+  \texttt{MemoCarrollCD.pdf}, post it at the root of your \texttt{job
+    market directory} (which should correspond to your moniker; see
+  \ntn), email it to the JMPO and your dissertation advisers, and
+  you're done.  \ifthenelse{\boolean{MyNotes}}{\marginpar{\tiny Think
+      about having Nina create a place where they can deposit these
+      without my intervention.}}{}
+
+\item Note that you do not want to make an unfavorable impression on
+  the job market coordinator by being someone I have to hassle to get
+  you to do things like this job market memo.  Please do these things
+  on time without my having to pester you.
+
+\item Note that you {\it may} need to pester {\it me} or your advisor to do things
+that we are supposed to be doing.  Don't be shy about doing this; for pestering
+your advisor, you can blame me and the timetables I have posted (of which all the
+faculty are aware).  If you need to pester me, you can remind me of my own
+schedules and that I have encouraged you to pester me.
+
+\item Schedule a practice job talk for a date sometime in October in
+  one of the department's workshops (if it is impossible to schedule a
+  date before the beginning of November, then you can take one later;
+  but it is {\it strongly} preferred to do so before the first week of
+  November).  (Your presentation must be prepared using the {\it
+    Beamer} package for {\LaTeX}.)  Make sure to confirm that your
+  advisors can attend on the date of your workshop.  In advance of the
+  workshop, recruit one of your fellow grad students to take detailed
+  notes on any questions or discussions that arise during your
+  seminar.  Also, arrange to make sure that someone is in charge of
+  making a video recording of your pitiful performance using the
+  department's digital videocam; seeing yourself on camera will prove
+  to be the most effective way to see the cringe-inducing defects in
+  your presentation style.
+  
+\item Get an AEA student membership.  Reliable sources tell us that
+  the registration process allows you to indicate areas of interest
+  and to somehow indicate that you may be on the job market this year.
+  Some recruiters may actually use this information!
+  
+\item Register to attend the AEA meetings, and try to get a room in
+  the hotel where most interviews will take place (the `headquarters'
+  hotel).  Don't wait until the last minute, because late
+  registrations do not get included in the directory of who is staying
+  where, so employers may not be able to find you.  Plan to arrive no
+  later than midday or early afternoon on the day before the first
+  sessions; in some cases employers might ask to interview you on the
+  afternoon of that day.
+  
+\item Produce a CV (3 pages or less-{\it no exceptions}) and a
+  dissertation abstract (using the provided template and following the
+  examples of previous generations of students) by {\it early} October.  The
+  abstract must be approved by your advisor (and this is a good time
+  to discuss with the advisor what you expect will be the contents of
+  the entire dissertation).  The abstract must fit on one (1) page
+  (that is, it must be fewer than two pages, which is to say that the
+  number of pages cannot exceed $e^{-\iota \pi}$); it must use at
+  least an 11 point font, and have margins of at least 1.2 inches.  Title at
+  top, followed by name, followed by text.  We will do a mass mailing
+  of vitas and abstracts to potential employers in mid-October.
+  (Include visa/citizenship status on vita).  {\it Use the templates
+    provided.}  Post both the PDF and the \texttt{.tex} documents in
+  your root \texttt{job market directory}, so others can learn from your pitiful
+  \texttt{.tex} efforts and can be slightly less pitiful themselves.
+
+\item Once your CV, abstract, and job market paper are ready, it will
+  be {\it your} responsibility to post them into the home page that
+  the department will create under your \Moniker.
+  Instructions can be found at the \texttt{JMCC Help} web page listed
+  below, under the header \texttt{JobMarketComputerHelp}.  To see what
+  the final page will look like, go to
+  \url{http:/www.econ2.jhu.edu/jobmarket/2011/}.  (The page
+  \url{http:/econ.jhu.edu/research-programs/research-resources/computing-resources/}
+  may also contain answers to technical questions.)
+
+\item Produce a finished job market paper by the first week of October.  It should
+  be complete, polished, well-written, and nicely formatted.  It
+  should look like something ready to send to a journal, not a work in
+  progress.  It must be written using {\LaTeX} -- NOT Word, NOT Scientific Word -- {\LaTeX}.  (It's fine to have an
+  additional paper or two ready, but quality is {\it much} more
+  important than quantity; if you have to make a choice between completing a second or third paper, and 
+polishing the job market paper, polish.)
+  
+\item In early November, you will begin applying to specific employers
+  by sending them a package of materials that I will henceforth refer
+  to as your Acorn (contents described below).\footnote{Saying: `From
+    A Tiny Acorn A Mighty Oak Grows' -- a metaphor for your eventual
+    job and career, growing from this tiny job packet! (I have coined
+    this term to avoid confusion with the `packet' of JHU Econ CVs and
+    Abstracts that the department will be sending).}  If you are not
+  ready by that time (basically, if you do not have a job market paper
+  and your advisors' approval), you will not be on the market.
+  
+  After you have obtained your advisors' approval for your list of
+  places you plan to apply to (and for your job market paper), you
+  will follow the procedures in the
+  \url{http:/econ.jhu.edu/people/ccarroll/jobmarket/RecLetters/}
+  directory to get recommendation letters sent on your behalf.
+
+But YOU send your OWN Acorn to each of these employers (either by mail -- for those schools that still accept snail-mail applications -- or electronically).  The Acorn should include
+\begin{itemize}
+\item A cover letter indicating the job you
+  are applying for (remember that sometimes a letter will arrive at
+  the wrong place - an economics department in the business school,
+  say, or public policy school when it was intended for the School of
+  Arts and Sciences - the purpose is to make sure that the letter has
+  enough information to get it redirected to the right place)
+\item Your CV and dissertation abstract
+\item Your job market paper
+\item A file folder with your name (e.g., ``Arbatli, Elif C.'') on a
+  neatly printed label in the file folder tab.  (This is to endear you
+  to the people who will be receiving your application, 90 percent of
+  whom would immediately create such a file folder as their first step
+  in processing your application, and who will be delighted to have
+  been saved 2 minutes of time by your thoughtfulness in preparing the
+  folder for them).  The office staff can provide you with pages of
+  blank folder labels on which you can print as many copies as
+  necessary of your name to stick on the folder tabs.
+\end{itemize}
+
+Your letter writers should know long in advance that they will be
+expected to write a letter, and you should remind them by, say,
+October 23 that their letters will be needed soon.  {\it After} you
+have sent your Acorns out, you can request that your advisers send
+their letters.  (It is important to wait: Letters are often lost if
+they arrive before an application, because there is no file to put
+them in).  
+
+\begin{comment}   % This information should now all be contained in RecLetters, 2012-10-27
+Many schools are now accepting letters by email rather than snail
+mail.  Nonetheless, often email addresses do not work.  Therefore the
+procedure is as follows.  First, compile a list of employers accepting
+letters by email, with the appropriate email addresses.  Separately,
+you must supply an envelope with the appropriate address on it (these
+can be generated using the \texttt{EmployersMoniker.xls} spreadsheet
+which you should customize to, e.g.,
+\texttt{EmployersArbatliEC.xls}; but please do NOT customize the columns of 
+the \texttt{EmployersMoniker.xls} spreadsheet -- this will make it more difficult
+for you in generating your letters as well as for the JMPO when trying to figure
+out who has applied where).  You must give a printed copy of
+your spreadsheet to the office staff, because they will use these
+physical paper copies to keep track of their progress in sending out
+the letters.  The office will try sending the letters by email.  If
+that fails (wrong email addresses are VERY common), the office will
+send letters by snail mail.  {\it The department will cover postage on
+  any such letters.}  Finally, provide a separate set of envelopes for
+the employers who only accept letters by mail.  Your adviser may also
+want you to separate potential employers into academic and
+non-academic categories; if so, provide separate sets of envelopes for
+these categories.
+\end{comment}
+  
+  Your Acorns should go out by 1 week {\it before} Thanksgiving $\mathsf{T}_{-1w}$ (it is
+  common for members of hiring committees to bring a pile of applications
+  home with them over the Thanksgiving break), and letters should
+  follow as quickly as possible thereafter (but cannot be sent until
+  you give mailing labels to the dept staff).  
+
+For further information on procedures for getting recommendation letters done, see \recLet.
+
+\begin{comment} % Everyone seems to have abandoned this practice
+\item In October and November, a few major employers (IMF, the Fed)
+  may schedule preliminary interviews on campus with Hopkins
+  students.\footnote{In recent years, these employers seem to have
+    reduced or eliminated their campus visits - not just to Hopkins, but in general.
+    Don't be disturbed if no Hopkins visit is scheduled.}  Note that
+  the IMF tends to like to draw up their list of interviewees themselves
+a week or two before they come to campus, which can be problematic
+because sometimes they want to do the interviews before the deadline
+for deciding whether you are on the market.  This is one of the many
+annoying things about the IMF's job application process, because you
+may need to make a judgment about applying to the IMF earlier than a
+general judgment about whether to be on the market.  However, if you
+change your mind after the interview you can withdraw your application
+(at some unknown expected cost to your chances for reapplying next
+year).
+\end{comment} 
+
+\item \ifdvi\hypertarget{Signal}{{\bf [Signal]}~}\fi In the latter half of November, the AEA job registration process 
+  allows you to designate no more than two employers to whom you want
+  to ``signal'' special interest.  (See the url at the end of this
+  document).  These signals, in some cases, actually have value because 
+each person has only two of them.  Though you should not obsess about 
+where to send your ``signals'' you should give it some thought -- if you
+are a plausible candidate for a job at the institution in question, they
+will definitely pay more attention to your application if they receive your 
+``signal.''  It will single out your application from the 400 others they will have received.
+They might receive only 10 ``signals'' so they can afford to pay close attention
+to those applications.
+  
+\item In early December, we will schedule mock interviews in which
+  Hopkins faculty pretend to be interviewers at the AEA meetings and
+  grill you as you will be grilled there.
+  
+\item Between early December and late December, employers who are
+  potentially interested in you will contact you to schedule an
+  interview at the AEA meetings.  It is vital that during this period
+  (even over the holidays) you are in touch with your email and phone
+  messages.  If you will be away, learn how to retrieve voicemail
+  messages from your answering machine before you go!  (Or list as
+  your contact phone number a cellphone number that will work wherever
+  you may go; note that you CANNOT expect employers to hunt you down -
+  the phone number you provide to them should succeed in contacting
+  you with 100 percent probability).
+  
+\item Prepare for the interviews; several students have provided
+  detailed advice, which I have posted in the ``Resources'' directory
+  of my job market page.  Also, the document
+  \texttt{Practice.Interviews.Student.Preparation.doc} provides an
+  excellent overview and guidance. One further requirement is to be
+  able to articulate an explicit plan for when your dissertation will
+  be completed and what it will consist of; many employers, in
+  interviews, will ask this question, and you need to have an answer
+  (approved by your advisor) ready at hand. \ifdvi\hypertarget{InterviewPrep}{}\fi
+  
+\item Beginning in late January, and extending to late March,
+  employers who are still interested in you will call to schedule a
+  job talk.
+  
+\item After any given job talk, an employer can wait anywhere from a
+  day to two months before getting back in touch with you.  But it is
+  socially acceptable for you to call or email to ask for an update on
+  your status.
+  
+\item If you don't have a job by late March, don't despair.  In the
+  end, experience shows that eventually everyone finds a job!
+
+\item When your final job status is resolved (that is, when you accept 
+a job offer), email me, your advisors, and the JMCC to make sure we have the info.
+
+\end{enumerate}
+  
+One activity that does not fit neatly into the chronological framework
+articulated above is the process of developing the list of places you
+want to apply to.  You should start this process as soon as your
+advisor gives you preliminary approval to be on the market.
+Periodically check Job Openings for Economists (JOE) (available from
+the AEA) for job listings.  You might also check listings from the
+Financial Management Association and the National Association of
+Business Economists.  If you are interested in overseas jobs, look at
+the European JOE and the ads in the {\it Economist}.  (If you discover
+job listings that may be of interest to your classmates, please let
+them know).
+
+You will ultimately need to generate form letters to the employers you
+plan to apply to, and will need various kinds of information about
+them (like email addresses and phone numbers) as you work your way
+through the process.  Over the years, we have developed a standardized
+Excel spreadsheet template that contains slots for all the information
+you will need to collect, available in the \Templates~folder as
+\texttt{EmployersMoniker.xls}.  You {\it MUST} use (a renamed version
+of) this Excel spreadsheet template when you send out your mailing
+(because you want to use the linked form-letter-generating software);
+therefore, to avoid confusing yourself by having multiple lists, you
+should start your process by downloading the spreadsheet
+\texttt{EmployersMoniker.xls} from the templates directory.  Rename
+it to, e.g., \texttt{EmployersCarrollCD.xls}, erase the information
+that is in it (unless you want to apply to some of the example
+employers included in the template file -- in which case, you still
+need to verify that they are hiring this year and the contact
+information has remained the same).  Please {\it do not} rearrange or
+rename the columns in this template -- in the end, the JMPO will need
+to merge all of the students' templates in order to have a manageable
+idea of who has applied where, and you do not want to piss off the
+JMPO at this crucial time by making extra work in the form of figuring
+out what you have renamed columns to and where you have moved them to.
+(You are welcome to add extra columns beyond those in the template,
+and hide those that you don't need to use; but do NOT rename or
+reorder them!).
+
+When you have developed a list of places to which you wish to apply,
+make an appointment with your advisor(s) to discuss the list.  (No
+later than early November, after the November JOE comes out and you
+have had time to evaluate it).  When you and your advisor(s) have
+agreed on the final list, you will need to give copies of
+the list to the people who are writing reference letters.  See \recLet~for procedures.  But YOU send the Acorn; some employers also require a
+transcript, and it probably makes sense to include one in all your
+Acorns rather than trying to make some Acorns with and some without
+it.  For academic employers, some will ask for evidence of teaching
+skills; here, there is no clear-cut standard for what they expect to
+receive, but student evaluations of your performance (including a few
+choice quotes from the student evaluation forms) are a good idea.  Do
+NOT send more than a page or two of info on this subject - nobody will
+read more than this, so distill everything down to the essence.
+
+Err on the side of too many applications rather than too few.  But
+don't waste everyone's time by applying to places that you would turn
+down under all possible circumstances.
+\ifthenelse{\boolean{MyNotes}}{\marginpar{\tiny Emphasize the point
+    that they may not apply to places where they would not accept if
+    it were the only offer.  If you have an offer and decline it, then
+    you will get no further assistance from the department.}}{}
+  
+One more point: You should have a regular computer backup plan
+(ideally, an automatic backup every night; at a minimum, once a week)
+for all the computer files that are critical to your thesis research,
+job market paper, and application process.  Without a backup, you are
+at risk of losing months worth of work or more, and in a worst case
+scenario it could mean you will have to withdraw from the job market.
+In 2003 one student's laptop crashed right in the middle of the job
+market.  Fortunately the student had a week-old backup of the key
+files; but let that be a warning.
+
+\pagebreak
+
+\together{
+\begin{center}
+\centerline{\Large Electronic Job Market Resources}
+\medskip\medskip
+\small
+\begin{tabular}{rl}
+   Overall & \url{http:/www.econ2.jhu.edu/people/ccarroll/JobMarket}
+%\\ emailing list & \url{mailto:JhuJobMarketPublic@googlegroups.com}
+\\ Database      & \url{http:/jhuEconPeople.dynalias.org}
+\\ Computer Help      & \url{http:/econ.jhu.edu/jobmarket/information/JobMarketComputerHelp.html}
+%\\ FacGmail List      & \url{http:/econ.jhu.edu/jobmarket/information/gmail-accts.pdf}
+\\ Cover Letter & \url{http:/www.econ2.jhu.edu/jobmarket/Information/CreateLabel\&CoverLetterInstruction.html}
+\\ ASSA meeting & \url{http:/www.vanderbilt.edu/AEA/anmt.htm}
+\\ JOE & \url{http:/www.aeaweb.org/joe}
+\\ JOE Signal & \url{http:/www.aeaweb.org/joe/signal/}
+%\\ Rumors & \url{http:/www.econjobrumors.com/}
+%\\ Placements & \url{http:/www.econ2.jhu.edu/recent_placements}
+\\ JMCC Help  & \url{http:/www.econ2.jhu.edu/jobmarket/Information/}
+\\ EconJobMarket & \url{http:/econjobmarket.org/candidates.php}
+%\\ Job Info & \url{http:/www.illinoisskillsmatch.com/}
+\\ Public Wiki & \url{http:/bluwiki.com/go/Econjobmarket}
+%\\ Rankings & \url{http:/www.econ2.jhu.edu/people/ccarroll/JobMarket/Resources/Rankings.doc}
+\\ Advice & \url{http:/www.econ2.jhu.edu/people/ccarroll/JobMarket/Resources/}
+\end{tabular}
+\end{center}}
+\normalsize
+
+The Advice category is particularly noteworthy, as it contains (among
+other things) a variety of documents specifically written by either
+JHU students or JHU faculty with their personal advice about various
+aspects of the job market process.  For example, the document
+\texttt{AdviceMoffittInterviews.doc} contains advice Robert Moffitt
+has provided about how to handle job market interviews.
+
+\begin{comment} % Seems defunct, 2012-11-27
+\url{http:/www.illinoisskillsmatch.com/} is a site for posting your
+resume and other information for employers to browse.  It may or may
+not be a valuable supplement to the ASSA process.
+\end{comment}
+
+One of you (the students on the job market) should create an emailing
+list for you to email each other with gossip, tips, useful urls that
+you discover, job listings that others might not have seen, etc.  
+
+
+\end{document}
