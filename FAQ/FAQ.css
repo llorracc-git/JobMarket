@@ -154,7 +154,6 @@ td.td11{ padding-left:5pt; padding-right:5pt; }
 table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
 .hline hr, .cline hr{ height : 1px; margin:0px; }
 div.array {text-align:center;}
-table.multicols { width:100%; margin-left:1em; margin-top:1em; margin-bottom:1em; }
 table.boxedverbatim {width:100%;}
  pre.boxedverbatim{border:solid 1px; padding-right:1em;} 
 table.boxedverbatim {text-align:center;}

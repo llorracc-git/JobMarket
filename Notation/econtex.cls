@@ -27,8 +27,9 @@
 %%%     \jelclass can be used to show JEL classifications below the abstract
 %%%     \thanks{text of the thank-you footnote} produces a footnote at the bottom of the page containing the text
 
-\ProvidesClass{econtex}[2013/05/08 LaTeX class for economics papers, handouts, and exam questions written by Christopher Carroll]
+\ProvidesClass{econtex}[2016/05/27 LaTeX class for economics papers, handouts, and exam questions written by Christopher Carroll]
 \NeedsTeXFormat{LaTeX2e}
+% \RequirePackage{rotating}
 
 \RequirePackage{ifthen}
 \RequirePackage{chngpage}
@@ -167,8 +168,13 @@ amsmath,amssymb,amsfonts,amsthm
 \setkomafont{caption}{\centering}
 \renewcommand{\captionformat}{~ }
 
+\newcommand{\forcedate}[1]{\newcommand{\@forcedate}{#1}}
+
 % titlepage with title, author(s), and date
+
 \renewcommand{\maketitle}{
+\ifthenelse{ \isundefined\@forcedate }{ 
+   \ClassWarningNoLine{econtex}{{\protect\forcedate} is undefined in the .tex file; please define it and rerun}}{}
    \ifthenelse{\equal{\theIncludeTitlePage}{1}}{
       \let\footnotesize\scriptsize
       \thispagestyle{empty}
@@ -180,11 +186,11 @@ amsmath,amssymb,amsfonts,amsthm
    \begin{spacing}{1.00}
    \textbf{\@title}
    \end{spacing}
-   \end{LARGE}\medskip
+   \end{LARGE}\medskip\medskip\medskip
    {\normalsize \@date \par}       
    {\tiny{~}\par}
    \ifthenelse{\equal{\theIncludeTitlePage}{1}}{
-      \vspace*{5mm}
+      \vspace*{3mm}
     {\large
      \lineskip .75em%
       \begin{tabular}[t]{c}%
@@ -194,7 +200,10 @@ amsmath,amssymb,amsfonts,amsthm
    \end{center}
 }
 
+
 \newcommand{\maketitleWithForcedDate}[1]{
+\ClassWarningNoLine{econtex}{\protect\maketitleWithForcedDate{} is deprecated.  To set a date different from the current one, just use the \protect\date{(string desired to signify paper date)}}
+
    \ifthenelse{\equal{\theIncludeTitlePage}{1}}{
       \let\footnotesize\scriptsize
       \thispagestyle{empty}
@@ -210,7 +219,7 @@ amsmath,amssymb,amsfonts,amsthm
    {\normalsize #1 \par}       
    {\tiny{~}\par}
    \ifthenelse{\equal{\theIncludeTitlePage}{1}}{
-      \vspace*{5mm}
+      \vspace*{3mm}
     {\large
      \lineskip .75em%
       \begin{tabular}[t]{c}%
@@ -237,7 +246,7 @@ amsmath,amssymb,amsfonts,amsthm
 }{%
    \noindent {\tiny \phantom{.}} \\  % Trick to get proper spacing in html
    \noindent \hrule height 0.4pt depth 0.0pt width \textwidth \relax
-   \vspace*{3mm}
+   \vspace*{0mm}
    \ifthenelse{ \isundefined\@keywords }{
    \ClassWarningNoLine{econtex}{No keywords specified.
       Please use the command \protect\keywords}
@@ -254,14 +263,14 @@ amsmath,amssymb,amsfonts,amsthm
 }{
 \item[\textbf{JEL codes~}] \@jelclass
 }
+
+\end{Description}
 \ifthenelse{ \isundefined\@aspublished }{
 }{
 {
 
-\vspace{0.1in}\centerline{\it \@aspublished}}
-}
-\end{Description}
-\end{quote}
+\vspace{0.1in}\@aspublished}
+}\end{quote}
 }
 
 \setcounter{footnote}{0}%
@@ -349,3 +358,12 @@ amsmath,amssymb,amsfonts,amsthm
 
 \def\name#1{\global\advance\c@bottomauthor by 1\textsuperscript{\tiny \the\c@bottomauthor}{#1}{~~~~}}
 
+\makeatletter
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+\makeatother
