@@ -97,6 +97,7 @@ Thumbs.db
 *.out
 *.toc
 *.fmt
+*.title
 
 ## Intermediate documents:
 *.dvi
