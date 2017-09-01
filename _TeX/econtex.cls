@@ -27,10 +27,10 @@
 %%%     \jelclass can be used to show JEL classifications below the abstract
 %%%     \thanks{text of the thank-you footnote} produces a footnote at the bottom of the page containing the text
 
-\ProvidesClass{econtex}[2016/05/27 LaTeX class for economics papers, handouts, and exam questions written by Christopher Carroll]
+\ProvidesClass{econtex}[2017/08/01 LaTeX class for economics papers, handouts, and exam questions written by Christopher Carroll]
 \NeedsTeXFormat{LaTeX2e}
 % \RequirePackage{rotating}
-
+\RequirePackage{snapshot} % Creates list of external files used by a LaTeX document
 \RequirePackage{ifthen}
 \RequirePackage{chngpage}
 
@@ -113,7 +113,41 @@ amsmath,amssymb,amsfonts,amsthm
 ,color
 }
 
-\RequirePackage{econtex}
+% \RequirePackage{econtex} % Removed 20170801 because won't work when invoked from nonroot paths
+% Contents of the file are pasted in below
+
+%---------------Custom Definitions--------------
+
+\def\liminf{\mathop{\rm lim\, inf}\limits} 
+\DeclareMathOperator{\Ex}{\mathbb{E}} % Expectations operator 
+\def\var{\operatorname{var}} % variance
+\def\cov{\operatorname{cov}} % covariance
+\def\std{\operatorname{std}} % standard deviation
+\def\argmax{\operatornamewithlimits{arg\,max}} % argmax
+
+%---------------Custom Modifications----------------------
+
+% \htline defines a thick horizontal line in table
+\def\htline{\noalign{\hrule height 2\arrayrulewidth}}
+
+% \hdline defines a dotted horizontal line in table
+\def\hdline{\noalign{.\dotfill{}.}}
+
+%To keep footnotes on a single page except in extreme cases
+\interfootnotelinepenalty=5000 %from 0 to 10000
+
+%To prevent hyphenation
+\hyphenpenalty=5000 %from 0 to 10000, default is 200
+
+%To prevent breaking math formula
+\relpenalty=4000 %from 0 to 10000, default is 500
+
+%To prevent breaking math formula after binary operator 
+\binoppenalty=10000 %from 0 to 10000, default is 700
+
+%--------------------------------------------------------
+
+
 \RequirePackage[mathscr]{eucal}
 \RequirePackage[normalem]{ulem}
 \providecommand\bmmax{0} % Prevent boldmath package from using up too much memory
@@ -298,15 +332,10 @@ amsmath,amssymb,amsfonts,amsthm
 
 
 \RequirePackage[multiple]{footmisc}
-\RequirePackage{manyfoot,perpage}
-\DefineFNsymbols{blank}[text]{{} {} {} {} {}}
-\setfnsymbol{blank}
-\DeclareNewFootnote{B}[fnsymbol]
-\MakePerPage{footnoteB}
+\RequirePackage{manyfoot}
+\RequirePackage{perpage} \DefineFNsymbols{blank}[text]{{} {} {} {} {}} \setfnsymbol{blank} \DeclareNewFootnote{B}[fnsymbol] \MakePerPage{footnoteB} \renewcommand{\thanks}{\footnoteB} \newcommand{\thanksFooter}{\footnoteB}
 
-
-\renewcommand{\thanks}{\footnoteB}
-\newcommand{\thanksFooter}{\footnoteB}
+% 20170126: perpage package conflicts with something else so is removed in econtexMake.sh
 
 \hfuzz2pt % Don't bother to report over-full boxes if over-edge is < 2pt
 
