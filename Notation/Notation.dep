@@ -47,8 +47,9 @@
   *{file}   {t1enc.def}   {2005/09/27 v1.99g}
   *{package}{color}       {2016/05/09 v1.1c}
   *{file}   {color.cfg}   {2016/01/02 v1.6}
-  *{file}   {dvips.def}   {2015/12/30 v3.0k}
-  *{file}   {dvipsnam.def}{2015/12/30 v3.0k}
+  *{file}   {pdftex.def}  {2011/05/27 v0.06d}
+  *{package}{infwarerr}   {2016/05/16 v1.4}
+  *{package}{ltxcmds}     {2016/05/16 v1.23}
   *{package}{eucal}       {2009/06/22 v3.00}
   *{package}{ulem}        {2012/05/18 v0.0}
   *{package}{bm}          {2016/02/27 v1.2a}
@@ -60,12 +61,10 @@
   *{package}{manyfoot}    {2005/09/11 v1.10}
   *{package}{nccfoots}    {2005/02/03 v1.2}
   *{package}{perpage}     {2014/10/25 v2.0}
-  *{package}{tex4ht}      {0000/00/00 v0.0}
   *{package}{econtexSetup}{0000/00/00 v0.0}
   *{package}{wasysym}     {2003/10/30 v2.0}
   *{package}{psibycus}    {2004/10/18 v4.5}
   *{file}   {ibycus4.map} {0000/00/00 v0.0}
-  *{file}   {Uibycus.fd}  {2004/10/18 v4.5}
   *{file}   {Uibycus.fd}  {2004/10/18 v4.5}
   *{file}   {iby4extr.tex}{0000/00/00 v0.0}
   *{package}{ushort}      {2001/06/13 v2.2}
@@ -73,13 +72,10 @@
   *{package}{graphics}    {2016/05/09 v1.0r}
   *{package}{trig}        {2016/01/03 v1.10}
   *{file}   {graphics.cfg}{2016/01/02 v1.10}
-  *{file}   {graphics.cfg}{2016/01/02 v1.10}
   *{package}{hyperref}    {2016/05/05 v6.83n}
   *{package}{hobsub-hyperref}{2016/05/16 v1.14}
   *{package}{hobsub-generic}{2016/05/16 v1.14}
   *{package}{hobsub}      {2016/05/16 v1.14}
-  *{package}{infwarerr}   {2016/05/16 v1.4}
-  *{package}{ltxcmds}     {2016/05/16 v1.23}
   *{package}{ifluatex}    {2016/05/16 v1.4}
   *{package}{ifvtex}      {2016/05/16 v1.6}
   *{package}{intcalc}     {2016/05/16 v1.2}
@@ -103,24 +99,22 @@
   *{package}{auxhook}     {2016/05/16 v1.4}
   *{package}{kvoptions}   {2016/05/16 v3.12}
   *{file}   {pd1enc.def}  {2016/05/05 v6.83n}
-  *{file}   {pd1enc.def}  {2016/05/05 v6.83n}
   *{file}   {hyperref.cfg}{2002/06/06 v1.2}
-  *{file}   {hyperref.cfg}{2002/06/06 v1.2}
-  *{file}   {htex4ht.def} {2016/05/05 v6.83n}
-  *{file}   {htex4ht.def} {2016/05/05 v6.83n}
+  *{file}   {hpdftex.def} {2016/05/05 v6.83n}
+  *{package}{rerunfilecheck}{2016/05/16 v1.8}
   *{package}{JobMarket}   {0000/00/00 v0.0}
+  *{file}   {t3cmr.fd}    {2001/12/31 v0.0}
+  *{file}   {supp-pdf.mkii}{0000/00/00 v0.0}
+  *{package}{epstopdf-base}{2016/05/15 v2.6}
+  *{package}{grfext}      {2016/05/16 v1.2}
+  *{file}   {epstopdf-sys.cfg}{2010/07/13 v1.3}
   *{package}{nameref}     {2012/10/27 v2.43}
   *{package}{gettitlestring}{2016/05/16 v1.5}
-  *{file}   {t3cmr.fd}    {2001/12/31 v0.0}
-  *{file}   {t3cmr.fd}    {2001/12/31 v0.0}
-  *{file}   {umsa.fd}     {2013/01/14 v3.01}
+  *{file}   {Notation.out}{0000/00/00 v0.0}
+  *{file}   {Notation.out}{0000/00/00 v0.0}
   *{file}   {umsa.fd}     {2013/01/14 v3.01}
   *{file}   {umsb.fd}     {2013/01/14 v3.01}
-  *{file}   {umsb.fd}     {2013/01/14 v3.01}
-  *{file}   {ulasy.fd}    {1998/08/17 v2.2e}
   *{file}   {ulasy.fd}    {1998/08/17 v2.2e}
   *{file}   {uwasy.fd}    {2003/10/30 v2.0}
-  *{file}   {uwasy.fd}    {2003/10/30 v2.0}
-  *{file}   {t1cmtt.fd}   {2014/09/29 v2.5h}
   *{file}   {t1cmtt.fd}   {2014/09/29 v2.5h}
 }
