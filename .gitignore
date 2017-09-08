@@ -320,3 +320,12 @@ _region_.tex
 # *.css
 # *.dep
 # index.html
+
+
+# find . -name '*.pdf' -delete
+# find . -name '*.html*' -delete
+# find . -name '*.css' -delete
+# find . -name '*.dep' -delete
+# find . -name 'index.html' -delete
+
+# auto
