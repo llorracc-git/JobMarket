@@ -313,3 +313,10 @@ latexmkrc
 _region_.tex
 
 *Icon*
+
+# # Files that should be locally compiled
+# *.pdf
+# *.html
+# *.css
+# *.dep
+# index.html
