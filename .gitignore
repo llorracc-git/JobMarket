@@ -314,9 +314,18 @@ _region_.tex
 
 *Icon*
 
-# # Files that should be locally compiled
-# *.pdf
-# *.html
-# *.css
-# *.dep
-# index.html
+# Files that should be locally compiled
+*.pdf
+*.html
+*.css
+*.dep
+index.html
+
+
+# find . -name '*.pdf' -delete
+# find . -name '*.html*' -delete
+# find . -name '*.css' -delete
+# find . -name '*.dep' -delete
+# find . -name 'index.html' -delete
+
+auto
