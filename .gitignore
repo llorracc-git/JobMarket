@@ -310,7 +310,8 @@ economics.bib
 latexmkrc
 
 #
-_region_.tex
+_region_.*
+*.title
 
 *Icon*
 
