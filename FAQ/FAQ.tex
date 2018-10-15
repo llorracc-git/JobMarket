@@ -2,6 +2,10 @@
 \usepackage{JobMarket}
 
 \usepackage{econtexSetup}
+% Allow links to items inside itemize environment
+% https://tex.stackexchange.com/questions/81949/can-individual-items-in-an-itemize-list-be-labelled-and-hyperref-linked/81952#81952
+% \AtBeginEnvironment{itemize}{\apptocmd{\item}{\phantomsection}{}{\errmessage{couldn't patch item}}} 
+\providecommand\phantomsection{}
 \provideboolean{MyNotes}\setboolean{MyNotes}{false} % Whether to show marginalia
 
 \pagestyle{plain}
@@ -40,8 +44,10 @@ Frequently Asked Questions About the Job Market Process
   you, not to worry you; we have a very good record of students
   ultimately getting jobs).
 
+  \ifdvi\phantomsection\hypertarget{DecideByWhen}{DecideByWhen}\fi
+  
 \item When do I need to make a decision about whether I am going on
-the market this year?\ifdvi\hypertarget{DecideByWhen}\fi
+the market this year?
 
 If you are a 6th year student this year, you don't have a choice: If
 you have an acceptable job market paper in time, you must go on the
@@ -50,13 +56,7 @@ are in deep trouble, since the department must approve your job market
 paper, you can't go on the market without a paper, and you normally can't stay
 in the program for a 7th year.  (See the graduate \href{http://www.econ2.jhu.edu/pdf/Econ\_Grad\_Handbook.pdf}{handbook} for a fuller discussion of these issues.) 
 
-For other students, basically you should be talking to your advisors
-(ALL of them, not just your main advisor) to make a final decision by
-the end of the first week of October.  It is costly to you and to us
-for you to withdraw after the job candidate website `goes public' in
-mid-to-late October.  It is even costlier to withdraw after you send
-out applications to employers in early-to-mid November.  Anyone who
-attempts to withdraw after mid December will be shot.
+For other students, basically you should be talking to your advisors (ALL of them, not just your main advisor) to make a final decision by the end of the first week of October.  It is costly to you and to us for you to withdraw after the job candidate website `goes public' in mid-October.  It is even costlier to withdraw after you send out applications to employers in early-to-mid November.  Anyone who attempts to withdraw after mid December will be shot.
 
 \begin{comment}
 
@@ -141,15 +141,23 @@ get a job without support from JHU).
   Yes - if the coauthor is another student, and that student is not
   also using the same paper.  No, if the paper is with one of your
   advisors.  Maybe, if the paper is with someone who is not a student
-and not an advisor.  You will need to discuss with your advisor.
+  and not an advisor.  You will need to discuss with your advisor.
 
-\item What is the timing of posting of jobs on JOE?
+\item Where should I look for jobs?
 
-  Each year is slightly different from the previous. The following table (credit: Daniel Garcia) 
-  mentions the number of new jobs posted on JOE between different dates 
+  There is one main source: \JOE
+
+  No other source that I know of is large enough to direct everyone to. There are postings for jobs just in Europe, and for certain countries or markets, or for particular professions.  (If any student finds a rich place that everyone should be looking at for job postings, please let me know).
+
+\item What is the timing of posting of jobs on JOE? 
+
+  Each year is slightly different from the previous. See the table (credit: Daniel Garcia) 
+ that shows the number of new jobs posted on JOE between different dates 
   during 2016's job cycle:\\
+
+  \ifdvi\phantomsection\hypertarget{JobPostDates}{(JobPostDates)}\fi
   
-  \begin{table}[]
+\begin{table}[]
 \centering
 \begin{tabular}{|l|c|}
 \hline
@@ -163,7 +171,7 @@ Dec 1 -- Jan 1  & 115                       \\ \hline
 
 \item How is the market for economists this year?
 
-We don't know at this point.  But there is an enormous amount of idiosyncratic
+We never really know until the market is over.  But there is an enormous amount of idiosyncratic
 variation from subfield to subfield, person to person, and institution to
 institution, so the overall market conditions may not matter as much
 as you think, either for good or for ill.
@@ -171,7 +179,7 @@ as you think, either for good or for ill.
 \item \ifthenelse{\boolean{MyNotes}}{\marginpar{\tiny }}{} 
 How many job applications should I send out?
 
-First, a key principle: You must not apply to a job that you would not
+First, a key principle: You must not apply to a job that you know you would not
 accept under any circumstances, even if it were your only offer.  If
 at the end of the job market process you have at least one job offer
 and you refuse it, you forfeit the right to any further help from us
@@ -228,9 +236,11 @@ are overcome with a pang of annoyance at the extra work.  So don't
 imagine that ``more is always better;'' include the extra letters if
 there's a good reason, but not otherwise.
 
-\item \ifthenelse{\boolean{MyNotes}}{\marginpar{\tiny }}{}  What are the Fed's rules about hiring persons who are not US citizens?
+\ifdvi\phantomsection\hypertarget{FedHiringRules}{(FedHiringRules)}\fi
 
-  For the Board of Governors, the answer is that it depends on the country you are from.  As of 2017, \href{https://www.federalreserve.gov/boarddocs/srletters/2006/SR0614a3.pdf}{the document linked here} which lists the eligible countries was found by Googling ``Does the Federal Reserve hire people nonimmigrant aliens?'' 
+\item \ifthenelse{\boolean{MyNotes}}{\marginpar{\tiny }}{}  What are the Fed's rules about hiring persons who are not US citizens? 
+
+  For the Board of Governors, the answer is that it depends on the country you are from.  As of 2017, \href{https://www.federalreserve.gov/boarddocs/srletters/2006/SR0614a3.pdf}{the document linked here} which lists the eligible countries was found by Googling ``Does the Federal Reserve hire nonimmigrant aliens?'' 
 
     According to \href{https://www.federalreserve.gov/careers-faqs.htm}{this FAQ}, ``The Board will hire any qualified person who is a United States citizen or who is not a citizen but meets the requirements of the Immigration Reform and Control Act of 1986 (IRCA).  As required by law, the Board will not hire any person who is unable to satisfy the requirements identified in IRCA. In addition, citizens and nationals of the United States will receive preference in employment over equally qualified persons who are not citizens or nationals of the United States.''
 
@@ -283,8 +293,8 @@ you can use to create the letters from your \EM~list.
   5-10 customized letters.  (And, the {\it first sentence} of the letter should signal
 clearly that it is customized -- people reading applications will probably assume that the letter is {\it not} customized and will only glance at it briefly; if the first sentence looks like boilerplate, they may miss whatever customizations you have done later).
 
+\ifdvi\phantomsection\hypertarget{WhatIfEmployerContactsStudent}{(WhatIfEmployerContactsStudent)}\fi
 \item What does it mean if an employer to whom I have not applied sends me an email asking me if I would be interested in applying?
-\ifdvi\hypertarget{WhatIfEmployerContactsStudent}{(WhatIfEmployerContactsStudent)}\fi
 
 This could mean any of several things.  One is that the employer has looked through the JHU candidates and 
 has identified you as someone who they think might be an especially good fit (perhaps for reasons that are 
@@ -302,7 +312,7 @@ go there even if it were your only offer).  You can also seek your advisor(s) ad
 
 \item How does the video of the seminar work?
   
-  You should have identified a classmate (your 'buddy') whose
+  You should have identified a classmate (your `buddy') whose
   responsibility will be to make sure the video camera is recording
   and the video will be accessible to you during your seminar.  (The
   JMCC will provide info to everyone about how to do this).  
@@ -331,7 +341,7 @@ You will have to excercise judgment on this.  For example, in the case
 above, if the ``International Relations'' job is in a business
 school's economics department and the job description mentions
 international trade, then yes, it is reasonable to apply.  If it's in
-a public policy school's Internatioanl Relations department and your
+a public policy school's International Relations department and your
 sense that they are actually looking to hire someone to bloviate about
 ``globalization'' then it's probably a waste of time.  Your advisers
 should be able to give you good advice in specific cases.
@@ -358,26 +368,23 @@ the economic research literature?
 
 \item Will the department favor me over my classmate doing similar work?  Alternatively, how do I crush/avoid crushing my long-time friend in the job market?
 
-  This is less of an issue than you might think, because even when
-  schools say they are looking in ``all fields'' they usually are
-  actually strongly biased toward filling some particular need.  Even
-  if they say they are looking in ``health'' they may be really
-  looking for an IO person in health, or really looking for a
-  structural applied micro health person, or a public finance person, or
-  whatever.  So in practice, there is very little real issue of
-  ``student rivalry'' in the sense of worrying about whether other JHU
-  students are your competitors for a given job, or whether the
-  placement director might tilt the playing field somehow; in my (many) years
-  as a placement director I have never seen a case where 
-  two JHU students who actually close substitutes for a given match.  As a result, my
-  incentives are almost perfectly aligned with the students'
-  incentives, in the sense that my job performance is measured by how
-  well JHU students do on the market, and my incentive is to help find the right matches.
+  This is less of an issue than you might think, because even when schools say they are looking in ``all fields'' they usually are actually strongly biased toward filling some particular need.  Even if they say they are looking in ``health'' they may be really looking for an IO person in health, or really looking for a structural applied micro health person, or a public finance person, or whatever.  So in practice, there is very little real issue of ``student rivalry'' in the sense of worrying about whether other JHU students are your competitors for a given job, or whether the placement director might tilt the playing field somehow; in my (many) years as a placement director I have never seen a case where two JHU students who actually close substitutes for a given match.  As a result, my incentives are almost perfectly aligned with the students' incentives, in the sense that my job performance is measured by how well JHU students do on the market, and my incentive is to help find the right matches.
 
-\item It is early December.  I have received several requests for interviews to my ``backup'' places but might want to cancel them if I have enough interviews at my ``preferred'' places later.  Is it OK to accept interviews at my ``backup'' places for now and then back out later if it turns out that I need to use the slots for better places?
+\item It is fairly early (November or early December), and I have received several requests for interviews to my ``backup'' places but might want to cancel them if I have enough interviews at my ``preferred'' places later.  Is it OK to accept interviews at my ``backup'' places for now and then back out later if it turns out that I need to use the slots for better places?
 
-Yes, you can back out later.  On the whole it is not wise to do so unless every moment of your possible interview time is filled and then someone calls who is preferred to some of your existing interviews.  Again, remember the principle that you are likely to be interacting with many of the same people throughout your career, and you don't want your first impression on them to be a bad one.  Also, you may ultimately only receive a job offer from your ``backup'' places, not the ones you hope for!
+  Yes, you can back out later.  On the whole it is not wise to do so unless every moment of your possible interview time is filled and then someone calls who is preferred to some of your existing interviews.  Again, remember the principle that you are likely to be interacting with many of the same people throughout your career, and you don't want your first impression on them to be a bad one.  Also, you may ultimately only receive a job offer from your ``backup'' places, not the ones you hope for!
 
+  \ifdvi\phantomsection\hypertarget{InterviewBestTime}{(InterviewBestTime)}\fi
+  
+\item I've received an interview request for one of my most preferred employers. When is the best time to pick to do the interview?
+  \begin{itemize}
+  \item Morning, but not the first slot -- you and the interviewers will not yet be tired
+  \item The second day of not the first day of the conference
+    \begin{itemize}
+    \item You'll have had a few practice interviews to get in the groove, and will still be ``fresh'' and not robotic sounding
+    \item The interviewers similarly will have had enough interviews to be in their groove, but will also still be fresh
+    \end{itemize}
+  \end{itemize}
 
 \item Should I ask whether my expenses will be reimbursed by schools that fly me out for an interview?
 
