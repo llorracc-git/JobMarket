@@ -4,17 +4,14 @@
 \begin{document}
 
 \thispagestyle{empty}
-\hfill{\tiny \jobname, \today} 
+\renewcommand{\thepage}{} % Get rid of page numbers, which don't convert to md or html
 
 \medskip
 
 % For timetable of own tasks, see placement@jhuecon.org's calendar
 
-\begin{verbatimwrite}{\jobname.title}
-Timetable for the Job Market
-\end{verbatimwrite}
 
-\centerline{\LARGE \input \jobname.title}
+\centerline{\LARGE Timetable for the Job Market}
 
 
 \ifdvi\large\fi

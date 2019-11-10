@@ -4,7 +4,9 @@
 \usepackage{econtexSetup}
 % Allow links to items inside itemize environment
 % https://tex.stackexchange.com/questions/81949/can-individual-items-in-an-itemize-list-be-labelled-and-hyperref-linked/81952#81952
-% \AtBeginEnvironment{itemize}{\apptocmd{\item}{\phantomsection}{}{\errmessage{couldn't patch item}}} 
+% \AtBeginEnvironment{itemize}{\apptocmd{\item}{\phantomsection}{}{\errmessage{couldn't patch item}}}
+\renewcommand{\thepage}{} % Get rid of page numbers, which don't convert to md or html
+  
 \providecommand\phantomsection{}
 \provideboolean{MyNotes}\setboolean{MyNotes}{false} % Whether to show marginalia
 
@@ -53,7 +55,7 @@ If you are a 6th year student this year, you don't have a choice: If
 you have an acceptable job market paper in time, you must go on the
 market; if you don't have an acceptable job market paper in time, you
 are in deep trouble, since the department must approve your job market
-paper, you can't go on the market without a paper, and you normally can't stay
+paper, you can't go on the market without a paper, and you can't stay
 in the program for a 7th year.  (See the graduate \href{http://www.econ2.jhu.edu/pdf/Econ\_Grad\_Handbook.pdf}{handbook} for a fuller discussion of these issues.) 
 
 For other students, basically you should be talking to your advisors (ALL of them, not just your main advisor) to make a final decision by the end of the first week of October.  It is costly to you and to us for you to withdraw after the job candidate website `goes public' in mid-October.  It is even costlier to withdraw after you send out applications to employers in early-to-mid November.  Anyone who attempts to withdraw after mid December will be shot.
@@ -203,6 +205,16 @@ imagine that ``more is always better;'' include the extra letters if
 there's a good reason, but not otherwise.
 
 
+\item Can I send different sets of letters to different employers?
+
+  If every student had different letters for every employer, it would be impossible for Kasey to get it all correct (and a huge amount of work even to try).
+
+  She is prepared to handle different sets of letters to different categories of employers (usually, academic vs nonacademic) but you need to explicitly label those categories for her, and make SURE your letter writers label the letters clearly in the different categories.
+
+  Depending on her bandwidth, you might ask her to make a \textit{few} special-case deviations from your usual set of letters.
+
+  If the motivation is that you have a potential letter writer who has particular contacts at particular institutions that might be helpful, another (perhaps better) option is to have that writer email their contact at the institution directly, and send either a full letter or a personal email endorsement (or both).  This is more work for the letter writer, but is likely to be more effective than just having their letter included as (say) a fourth or, god forbid, fifth letter.
+
 \item How is the market for economists this year?
 
 We never really know until the market is over.  But there is an enormous amount of idiosyncratic
@@ -224,8 +236,7 @@ send.  Some students basically apply to every employer advertising a
 job for which they could conceivably qualify, which at a maximum might 
 lead to as many as 100 applications.  Others cull the list.  We {\it strongly
   encourage} you to apply to a minimum of 25 potential employers, by
-providing a limited subsidy to photocopying of your job packet: Your
-first \$x of photocopies will be free, where the details of the policy
+providing a limited subsidy to photocopying of your job packet: details of the policy
 can be found at
 \url{http://www.econ2.jhu.edu/Documentation/JobMarketPrinting.pdf}.
 Beyond \$x you pay the usual photocopying cost per page, which should
@@ -507,9 +518,9 @@ the page.  It is more important that it be readable and look professional than t
 it mention everything you have done.
 
 \item What's to stop me from applying for a job in JOE even if my advisors don't think I'm ready?  I'll just send 
-my application in and hope that someone will hire me even without advisors' approval.  [Nobody 
+my application in and hope that someone will hire me even without advisors' approval.  (Nobody 
 has been bold enough to ask this question directly, but I'm pretty sure several students have thought about it,
-so let me answer it here.]
+so let me answer it here).
 
 There is no point in your applying to employers unless you have
 approval from advisors and a reasonable job market paper.  The first
@@ -540,7 +551,7 @@ from anyone who has supervised you in the JHU program).
 
 \item After the interviews at the ASSA meetings, should I send a ``thank you'' email to the interviewers, or is that too pushy/annoying?
 
-  It is best NOT to send a generic email ``Dear [x], Thanks for interviewing me at the ASSA meetings.''  But it's OK, and maybe even a good idea, to send a BRIEF and SPECIFICALLY TAILORED message to a selection of the places you are most interested in.  ``Thank you for the suggestion that I look into the mortgage market of Burkina Faso because its institutional details provide a test of my theory.''
+  It is best NOT to send a generic email ``Dear x, Thanks for interviewing me at the ASSA meetings.''  But it's OK, and maybe even a good idea, to send a BRIEF and SPECIFICALLY TAILORED message to a selection of the places you are most interested in.  ``Thank you for the suggestion that I look into the mortgage market of Burkina Faso because its institutional details provide a test of my theory.''
 
 
 \end{enumerate}
