@@ -330,3 +330,5 @@ index.html
 # find . -name 'index.html' -delete
 
 auto
+*.ps
+*.out
