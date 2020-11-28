@@ -33,7 +33,7 @@ Broadly, for each iteration your steps are as follows:
 
 2.  Sort your `EmployersMoniker` spreadsheet according to five sort keys:
     
-    1.  Date you asked the staff to send the recommendation letters;
+    1.  Date on which the staff are to send the recommendation letters;
     
     2.  Method of recommendation ([`AEA/JOE`](http://aeaweb.org), [`AcademicJobsOnline`](http://academicjobsonline.org), [`EJM`](http://econjobmarket.org), [`Interfolio`](http://www.interfolio.com), push email (for sorting purposes, label it “email-push”), pull email (label it “email-pull”), or “other” with the understanding that anything in “other” will be sent only after ALL other recommendations for ALL other students are sent);
     
@@ -45,13 +45,25 @@ Broadly, for each iteration your steps are as follows:
     
     (There should be a macro (`Ctrl`+`w`) built into `EmployersMoniker` that can be executed to accomplish this sort – see the instructions in `EmployersMoniker``-Instructions.xlsx`).
 
-3.  Then send `EmployersMoniker` to <econ@jhu.edu>, and be sure to cc [`placement@jhuecon.org`](mailto:placment@jhuecon.org). (The placement director needs to know where you have applied for a host of reasons, including being prepared for calls that employers might make seeking further info).
+3.  Put the <span>`EmployersMoniker`</span> list in your `Private` directory on the server.
 
-4.  <span>*After having sent*</span> their `EmployersMoniker-[Which].xls` spreadsheet, the student should follow the steps outlined in detail below for those applications that involve either push or pull email.
+4.  Then send an email message `EmployersMoniker` to <econ@jhu.edu>AND to [`placement@jhuecon.org`](mailto:placment@jhuecon.org), letting us know that the list has been posted, AND containing a clickable link to the file. For example, if I were applying in 2020, and this was my “Early” list, I’d send a message like:
+    
+    > To: <econ@jhu.edu>, [`placement@jhuecon.org`](mailto:placment@jhuecon.org)
+    > 
+    > Subject: EmployersCarrollCD-Early.xls is posted
+    > 
+    > I have posted my first Employers speadsheet at:
+    > 
+    > https://www.econ2.jhu.edu/jobmarket/2020/CarrollCD/Private/EmployersCarrollCD-Early.xls
+    
+    (The placement director needs to know where you have applied for a host of reasons, including being prepared for calls that employers might make seeking further info).
 
-5.  <span>*After taking care of their push and pull email applications*</span>, students should complete their [`EJM`](http://econjobmarket.org), [`AcademicJobsOnline`](http://academicjobsonline.org), [`AEA/JOE`](http://aeaweb.org), and [`Interfolio`](http://www.interfolio.com) applications for this round (see below for details).
+5.  <span>*After having sent*</span> their `EmployersMoniker-[Which].xls` spreadsheet, the student should follow the steps outlined in detail below for those applications that involve either push or pull email.
 
-6.  <span>*After having done all of this*</span>, the student should email their recommenders and ask them to send their letters to <econ@jhu.edu>. Note that your request to recommenders needs to come last because if the letters arrive before the other steps have been taken, the letters may get lost. (Though it would be wise to remind your advisors a week or two beforehand that letters from them will be needed soon).
+6.  <span>*After taking care of their push and pull email applications*</span>, students should complete their [`EJM`](http://econjobmarket.org), [`AcademicJobsOnline`](http://academicjobsonline.org), [`AEA/JOE`](http://aeaweb.org), and [`Interfolio`](http://www.interfolio.com) applications for this round (see below for details).
+
+7.  <span>*After having done all of this*</span>, the student should email their recommenders and ask them to send their letters to <econ@jhu.edu>. Note that your request to recommenders needs to come last because if the letters arrive before the other steps have been taken, the letters may get lost. (Though it would be wise to remind your advisors a week or two beforehand that letters from them will be needed soon).
 
 More detailed procedures are below:
 

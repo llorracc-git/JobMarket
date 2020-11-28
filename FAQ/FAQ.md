@@ -110,7 +110,7 @@ Frequently Asked Questions About the Job Market Process
 
 14. When I am ready for my recommendation letters to be sent (after I have sent my packet to employers), what is the process?
     
-    See <http:/econ.jhu.edu/people/ccarroll/jobmarket/RecLetters> for detailed answers.
+    See <http:/www.econ2.jhu.edu/people/ccarroll/jobmarket/RecLetters> for detailed answers.
 
 15. Can there be more references than people writing the recommendation letters? For example, people who are not writing a letter but are willing to provide an evaluation of the applicant in case the potential employer contacts them?
     
